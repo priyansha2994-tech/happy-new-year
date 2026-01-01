@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Surprise 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle, #1a1a1a, #000);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    button {
+      padding: 16px 36px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(45deg, #ff4081, #ff79a8);
+      color: white;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 22px;
+      line-height: 1.6;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+    #message.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <button onclick="showMessage()">Tap for your New Year surprise 🎉</button>
+    <div id="message">
+      ✨ Happy New Year ✨<br><br>
+      To my favourite humans — thank you for being my safe place,
+      my chaos, and my constant ❤️<br><br>
+      Let’s make this year unforgettable 🌟
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").classList.add("show");
+    }
+  </script>
+
+</body>
+</html>
